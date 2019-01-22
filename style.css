@@ -4,32 +4,45 @@ h1 {
   font-size: 16fx;
 }
 
-body,
-html {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  background-color: green;
-}
-body {
-  height: 400%;
-  background-color: blue;
+input[type="submit"] {
+  background-color: red;
 }
 
-/* #boxOne {
-  background-color: yellow;
-  width: 300px;
-  height: 300px;
-  border: 2px solid black;
-  position: static;
+input[type="password"] {
+  border: 1px solid yellow;
 }
-#boxTwo {
-  background-color: red;
-  width: 100%;
-  height: 300px;
-  border: 2px solid black;
-  position: fixed;
-  top: 200px;
-  left: 0px;
-  bottom: 100px;
-} */
+
+body {
+  height: 100%;
+  background-color: white;
+}
+.container > .box {
+  background-color: yellow;
+}
+.child {
+  background-color: purple;
+  width: 40px;
+}
+.box {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+}
+
+@keyframes scaleAndRotateSquare {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: rotate(1turn) scale(0.5, 0.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-sidth: 640px) {
+  body {
+    background-color: blue;
+  }
+}
