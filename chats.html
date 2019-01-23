@@ -9,37 +9,41 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Chats</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <div class="header_top">
-        <div class="header_column"></div>
-        <!--나는 처음에 날씨, 위치를 넣을 거임.-->
-        <span class="js-weather"> <script src="weather.js"></script> </span>
-        <div class="header_column"></div>
-        <!-- 여기는 시간-->
-        <span class="header_time">18:38</span>
-        <div class="header_column"></div>
-        <!-- 낮인지 밤인지 표시-->
-        <!-- 여기는 현재 사용자 이름-->
-        <i class="fa fa-moon-o"></i>
-        <span class="header_battery">HanSangHyeok</span>
+        <div class="header_column">
+          <!--나는 처음에 날씨, 위치를 넣을 거임.-->
+          <span class="js-weather"> <script src="weather.js"></script> </span>
+        </div>
+        <div class="header_column">
+          <!-- 여기는 시간-->
+          <span class="header_time">18:38</span>
+        </div>
+        <div class="header_column">
+          <!-- 낮인지 밤인지 표시-->
+          <!-- 여기는 현재 사용자 이름-->
+          <i class="fa fa-moon-o"></i>
+          <span class="header_battery">HanSangHyeok</span>
+        </div>
       </div>
-      <div class="header_bottom"></div>
-      <div class="header_column"></div>
-      <span class="header_text">Edit</span>
-      <div class="header_column"></div>
-      <span class="header_text"
-        >Chats<span class="header_number"><i class="fa fa-caret"></i></span
-      ></span>
-      <div class="header_column"></div>
+      <div class="header_bottom">
+        <div class="header_column"><span class="header_text">Edit</span></div>
+        <div class="header_column">
+          <span class="header_text"
+            >Chats<span class="header_number"><i class="fa fa-caret"></i></span
+          ></span>
+        </div>
+        <div class="header_column"></div>
+      </div>
     </header>
     <!--채팅 검색 부분-->
-    <main class="chat">
+    <main class="chats">
       <div class="search-bar">
-        <i class="fa fa-search">
-          <input type="text" placeholder="Find friends, chats, Plus Friends" />
-        </i>
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Find friends, chats, Plus Friends" />
       </div>
       <ul class="chats_list">
         <li class="chats_chat">
@@ -48,7 +52,7 @@
               <img src="images/avatar.png" />
               <div class="chat_preview">
                 <h3 class="chat_user">HanSangHyeok</h3>
-                <span class="chat_list-message">this is test message</span>
+                <span class="chat_last-message">this is test message</span>
               </div>
             </div>
             <span class="chat_date-time">15:55</span>
@@ -60,7 +64,7 @@
               <img src="images/avatar.png" />
               <div class="chat_preview">
                 <h3 class="chat_user">KakaoTalk</h3>
-                <span class="chat_list-message"
+                <span class="chat_last-message"
                   >You logged into kakaoTalk PC from the PC</span
                 >
               </div>
@@ -75,9 +79,8 @@
       <a href="index.html" class="tab-bar_tab">
         <i class="fa fa-user"></i><span class="tab-bar_title">Friends</span>
       </a>
-      <a href="chats.html" class="tab-bar_tab">
-        <i class="fa fa-comment"></i
-        ><span class="tab-bar_title tab-bar_tab-selected">Chats</span>
+      <a href="chats.html" class="tab-bar_tab tab-bar_tab-selected">
+        <i class="fa fa-comment"></i><span class="tab-bar_title">Chats</span>
       </a>
       <a href="find.html" class="tab-bar_tab">
         <i class="fa fa-search"></i><span class="tab-bar_title">Find</span>

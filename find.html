@@ -9,28 +9,31 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Find</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <div class="header_top">
-        <div class="header_column"></div>
-        <!--나는 처음에 날씨, 위치를 넣을 거임.-->
-        <span class="js-weather"> <script src="weather.js"></script> </span>
-        <div class="header_column"></div>
-        <!-- 여기는 시간-->
-        <span class="header_time">18:38</span>
-        <div class="header_column"></div>
-        <!-- 낮인지 밤인지 표시-->
-        <!-- 여기는 현재 사용자 이름-->
-        <i class="fa fa-moon-o"></i>
-        <span class="header_battery">HanSangHyeok</span>
+        <div class="header_column">
+          <!--나는 처음에 날씨, 위치를 넣을 거임.-->
+          <span class="js-weather"> <script src="weather.js"></script> </span>
+        </div>
+        <div class="header_column">
+          <!-- 여기는 시간-->
+          <span class="header_time">18:38</span>
+        </div>
+        <div class="header_column">
+          <!-- 낮인지 밤인지 표시-->
+          <!-- 여기는 현재 사용자 이름-->
+          <i class="fa fa-moon-o"></i>
+          <span class="header_battery">HanSangHyeok</span>
+        </div>
       </div>
-      <div class="header_bottom"></div>
-      <div class="header_column"></div>
-      <span class="header_text">Edit</span>
-      <div class="header_column"></div>
-      <span class="header_text">Find</span>
-      <div class="header_column"></div>
+      <div class="header_bottom">
+        <div class="header_column"><span class="header_text">Edit</span></div>
+        <div class="header_column"><span class="header_text">Find</span></div>
+        <div class="header_column"></div>
+      </div>
     </header>
     <main class="find">
       <section class="find_options">
@@ -71,9 +74,8 @@
       <a href="chats.html" class="tab-bar_tab">
         <i class="fa fa-comment"></i><span class="tab-bar_title">Chats</span>
       </a>
-      <a href="find.html" class="tab-bar_tab">
-        <i class="fa fa-search"></i
-        ><span class="tab-bar_title tab-bar_tab-selected">Find</span>
+      <a href="find.html" class="tab-bar_tab tab-bar_tab-selected">
+        <i class="fa fa-search"></i><span class="tab-bar_title">Find</span>
       </a>
       <a href="more.html" class="tab-bar_tab">
         <i class="fa fa-ellipsis-h"></i><span class="tab-bar_title">More</span>

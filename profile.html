@@ -9,28 +9,33 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <div class="header_top">
-        <div class="header_column"></div>
-        <!--나는 처음에 날씨, 위치를 넣을 거임.-->
-        <span class="js-weather"> <script src="weather.js"></script> </span>
-        <div class="header_column"></div>
-        <!-- 여기는 시간-->
-        <span class="header_time">18:38</span>
-        <div class="header_column"></div>
-        <!-- 낮인지 밤인지 표시-->
-        <!-- 여기는 현재 사용자 이름-->
-        <i class="fa fa-moon-o"></i>
-        <span class="header_battery">HanSangHyeok</span>
+        <div class="header_column">
+          <!--나는 처음에 날씨, 위치를 넣을 거임.-->
+          <span class="js-weather"> <script src="weather.js"></script> </span>
+        </div>
+        <div class="header_column">
+          <!-- 여기는 시간-->
+          <span class="header_time">18:38</span>
+        </div>
+        <div class="header_column">
+          <!-- 낮인지 밤인지 표시-->
+          <!-- 여기는 현재 사용자 이름-->
+          <i class="fa fa-moon-o"></i>
+          <span class="header_battery">HanSangHyeok</span>
+        </div>
       </div>
-      <div class="header_bottom"></div>
-      <a href="index.html"> <i class="fa fa-times fa-lg"></i> </a>
-      <div class="header_column"></div>
-      <div class="header_column"></div>
-      <div class="header_column"></div>
-      <i class="fa fa-user fa-lg"></i>
+      <div class="header_bottom">
+        <div class="header_column">
+          <a href="index.html"> <i class="fa fa-times fa-lg"></i> </a>
+        </div>
+        <div class="header_column"></div>
+        <div class="header_column"><i class="fa fa-user fa-lg"></i></div>
+      </div>
     </header>
     <main class="profile">
       <header class="profile_header">
